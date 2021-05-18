@@ -71,6 +71,7 @@ main .post-container {
   width: calc(90vw - 160px);
   max-width: 1340px;
   line-height: 2.3;
+  text-align: justify;
 }
 @media (max-width: 1024px) {
   main .post-container {
