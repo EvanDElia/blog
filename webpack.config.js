@@ -40,6 +40,18 @@ module.exports = (env = {}) => {
                     }
                 },
                 {
+                    test: /\.ejs$/,
+                    use: [
+                        {
+                          loader: "ejs-webpack-loader",
+                          options: {
+                            data: {title: "New Title", someVar:"hello world"},
+                            htmlmin: true
+                          }
+                        }
+                    ]
+                },
+                {
                     test: /\.(le|c)ss$/,
                     exclude: /node_modules/,
                     use: [ {
